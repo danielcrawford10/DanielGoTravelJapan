@@ -1,24 +1,43 @@
+* {
+  margin: 0:
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+p{
+  margin: 0.5em 0 0.5em 0;
+  padding: 10px;
+}
+
+
+.topnav {
     overflow: hidden;
-    background-color: whitesmoke;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #999;
+    padding: 5px;
   }
   
-  .topnav a {
+  .topnav a:visited,
+  .topnav a:link {
     color: black;
-    font-size: 18px;
-    width: 100%;
-    padding: 10px;
     text-decoration: none;
-    display: contents;
-    background-color: whitesmoke;
-  }
+      font-size: 18px;
+      width: 100%;
+      padding: 0px;
+    }
+  
   
   .topnav a:hover {
     background-color: whitesmoke;
@@ -26,55 +45,49 @@ body {
   }
   
   .topnav a.active {
-    background-color: whitesmoke;
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
-  .h2{
-    color: black;
-    font-size: 18px;
-    width: 100%;
-    background-color: whitesmoke;
+
+  main {
+    display: block;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
   }
+
+  aside,
+  article {
+    padding: 2em;
+  }
+
+
+  article {
+    width: 75%;
+  }
+
+ 
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 100%;
+  }
+  
 
 footer {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      position:absolute;
-      bottom:0;
-      width:100%;
-      height:42px;  
-  }
+  display: flexbox;
+  text-align: center;
+}
 
-  [class*="col-"] {
-    width: 100%;
-  }
 
+@media only screen and (min-width: 768px) {
+   
+  main {
+    display: flexbox;
+  }
   
-.bottomnav {
-  overflow: hidden;
-  background-color: whitesmoke;
-
 }
 
-.bottomnav a {
-  color: black;
-  font-size: 18px;
-  width: 100%;
-  padding: 10px;
-  text-decoration: none;
-  display: contents;
-  background-color: whitesmoke;
-}
-
-.bottomnav a.active {
-  background-color: whitesmoke;
-  color: black;
-  text-decoration: underline;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-}
