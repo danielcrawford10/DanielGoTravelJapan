@@ -35,12 +35,12 @@ p{
     width: 75%;
   }
 
-nav {
+  nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-}
+  }
 
   .hidden {
     display: none;
