@@ -4,6 +4,7 @@ const myParagraphs = document.querySelectorAll(".hiddenp");
 
 myHideButton.addEventListener("click", () => {
     // myParagraphs.classList.toggle("hidden");
+    const myHiddenParagraphs = document.querySelectorAll(".hidden");
     console.log(myParagraphs);
     myParagraphs.forEach((p) => {
         p.classList.toggle("hidden");
@@ -16,10 +17,4 @@ myHideButton.addEventListener("click", () => {
     }
 });
 
-myParagraphs.forEach((p) => {
-p.addEventListener("click", (t) => {
-    console.log(t.target);
-    t.target.classList.toggle("hidden");
-})
-});
 

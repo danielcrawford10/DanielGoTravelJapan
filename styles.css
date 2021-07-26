@@ -35,13 +35,24 @@ p{
     width: 75%;
   }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
   .hidden {
     display: none;
   }
 
+  #hidebutton {
+    margin: auto;
+  }
+
   .navbar {
     overflow: hidden;
-    background-color:darkslategrey; 
+    background-color:lightslategray; 
   }
   
   .navbar a {
@@ -60,11 +71,9 @@ p{
   .dropdown .dropbtn {
     font-size: 16px;  
     border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
+    color: whitesmoke;
+    padding: 1.15em;
+    background-color: lightslategray;
     margin: 0;
   }
   
